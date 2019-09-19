@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <script src="lib/onsenui/js/onsenui.min.js"></script>
+
+  <script src="components/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script src="components/acao.js"></script>
+  <script src="components/bootstrap.js"></script>
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><!-- Link Icons -->
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Cadastro</h2>
+      </div>
+    </div>
+    
+    <form>
+    
+    <div class="row">
+      <div class="col-xs-9">
+        <input  type="text" class="form-control" id="codigo" placeholder="Código" readonly>
+      </div>
+
+       <div class="col-xs-3">
+          <div class="form-group">
+              <button class="btn btn-danger btn-block" id="camera"><i class="fas fa-camera"></i></button>
+          </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <label>Nome:</label>
+        <input  type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <label>CPF:</label>
+        <input  type="number" class="form-control" placeholder="Digite seu CPF" id="idade">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-6">
+        <label>Idade:</label>
+        <input  type="number" class="form-control" placeholder="Digite sua idade" id="cpf">
+      </div>
+  
+      <div class="col-xs-6">
+        <label>Sexo:</label><br>
+        <input type="radio" name="genero" id="masculino"> Masculino<br>
+        <input type="radio" name="genero" id="female"> Feminino <br>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <label>Cidade:</label>
+        <input  type="text" class="form-control" placeholder="Digite sua cidade" id="cidade">
+      </div>
+    </div>
+
+    <div class="row">
+    <div class="col-xs-12">
+      <div class="form-group">
+          <label for="">Escolha a imagem:</label>
+          <input type="file" id="caminho" class="form-control">
+      </div>
+    </div>
+  </div>
+
+</form>
+
+  <div class="row">
+    <div class="col-xs-6">
+      <button class="btn btn-info btn-block" id="salvar">Salvar</button>
+    </div>
+
+    <div class="col-xs-6">
+      <a href="home.html"><button class="btn btn-primary btn-block" id="listar">Listar</button></a>
+    </div>
+  </div>
+
+  </div>
+</body>
+</html>
